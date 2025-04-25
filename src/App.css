@@ -235,10 +235,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: -40px;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-color: #AA367C;
+  background-image: url('./assets/img/wallpaper_banner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5); /* เพิ่มสีดำจางๆ ซ้อน */
+  background-blend-mode: overlay; /* หรือ multiply, darken */
 }
 .banner .tagline {
   font-weight: 700;
@@ -303,9 +306,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url('./assets/img/wallpaper_banner.jpg');
+  background-color: rgba(0, 0, 0, 0.47); /* เพิ่มสีดำจางๆ ซ้อน */
+  background-blend-mode: overlay; /* หรือ multiply, darken */
 }
 .skill-bx {
-  background: #151515;
+  background: #062030;
+  box-shadow: inset 0 0 10px white;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -344,18 +351,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills_1 Css ************/
 .skill_1 {
-  padding: 20px 20px 50px 20px;
+  padding: 50px 20px 50px 20px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 0;
+  background-image: url('./assets/img/wallpaper_banner.jpg');
+  background-color: rgba(0, 0, 0, 0.7); /* เพิ่มสีดำจางๆ ซ้อน */
+  background-blend-mode: overlay; /* หรือ multiply, darken */
   
 }
 .skill_1-bx {
-  background: #151515;
+  background: #062030;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
-  /* box-shadow: inset 0 0 10px white; */
+  box-shadow: inset 0 0 10px white;
 }
 .skill_1 h2 {
 	font-size: 45px;
@@ -391,8 +401,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .aboutme {
   padding: 80px 0;
   position: relative;
-  background-color: rgba(10, 4, 37, 0.5);
-
+  background-color: rgba(119, 183, 243, 0.2);
+  box-shadow: inset 0 0 50px 30px rgba(176, 216, 255, 0.2);
 }
 .aboutme h2 {
 	font-size: 45px;
@@ -400,6 +410,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .aboutme p {
+  
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -413,8 +424,74 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: rgba(119, 183, 243, 0.2);
+  box-shadow: inset 0 0 50px 30px rgba(176, 216, 255, 0.2);
+
 }
+
+
+/* ตัว wrapper หลัก */
+.responsive-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap; /* สำคัญสำหรับจอเล็ก */
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* รูปภาพให้ responsive */
+.responsive-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+
+/* เนื้อหาด้านข้าง */
+.detail_autocorp {
+  max-width: 600px;
+  flex: 1;
+}
+
+/* ข้อความ */
+.company-name, .company-position, .company-assigned {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ทำให้ลิสต์ดูดี */
+.detail_autocorp ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+/* ทำให้รองรับจอเล็ก */
+@media (max-width: 768px) {
+  .responsive-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail_autocorp {
+    max-width: 100%;
+  }
+
+  .company-name, .company-position, .company-assigned {
+    font-size: 1rem;
+  }
+}
+
+
+
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -429,6 +506,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -458,7 +537,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #04a5f0 -5.91%, #01404b 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -469,6 +548,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
+    
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -483,14 +563,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
+  display: flex;
   position: relative;
   border-radius: 30px;
+  height: auto;
   overflow: hidden;
   margin-bottom: 24px;
+  border: 1px solid red;
 }
-.proj-imgbx::before {
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column; /* ซ้อนกันเมื่อหน้าจอเล็ก */
+    text-align: center;
+  }
+}
+
+.proj-imgbx::before { 
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(to bottom, #3a12eb 0%, #201f20 90%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -537,80 +627,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background-image: url('./assets/img/wallpaper_banner.jpg');
+  background-color: rgba(0, 0, 0, 0.8); /* เพิ่มสีดำจางๆ ซ้อน */
+  background-blend-mode: overlay; /* หรือ multiply, darken */
   padding: 60px 0 200px 0;
 }
 .contact img {
   width: 92%;
 }
-.contact h2 {
-	font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
-  width: 100%;
-}
+
 
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: #121212;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
