@@ -56,7 +56,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline" style={{ color: 'red' }}>HI I'm</span>
+                <span className="tagline">HI I'm</span>
                 <h1 style={{ color: '#fff' , fontSize: '50px'}} >{`NONTAPAT MANEESANG`} </h1>
                 <h1 style={{ color: 'yellow' , fontSize: '40px'}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Data Science" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

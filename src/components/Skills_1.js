@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp2 from "../assets/img/color-sharp2.png"
 
 import DBeaver_logo from "../assets/img/DBeaver_logo.png";
 import mysql from "../assets/img/mysql.svg";
@@ -90,7 +91,7 @@ export const Skills_1 = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-right" src={colorSharp2} alt="Image" />
     </section>
   )
 }
