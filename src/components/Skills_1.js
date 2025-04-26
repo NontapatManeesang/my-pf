@@ -1,13 +1,7 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
 import colorSharp2 from "../assets/img/color-sharp2.png"
-
 import DBeaver_logo from "../assets/img/DBeaver_logo.png";
 import mysql from "../assets/img/mysql.svg";
 import vscode from "../assets/img/vscode.svg";
@@ -16,6 +10,9 @@ import figma from "../assets/img/figma.svg";
 import postgresSQL from "../assets/img/postgresSQL.svg";
 import Wordpress from "../assets/img/Wordpress.png";
 import canva from "../assets/img/canva.png";
+import powerbi from "../assets/img/Power_BI.png";
+import fastapi from "../assets/img/fastapi.png";
+
 import MicrosoftOffice from "../assets/img/MicrosoftOffice.png";
 
 export const Skills_1 = () => {
@@ -85,6 +82,14 @@ export const Skills_1 = () => {
                             <div className="item">
                                 <img src={MicrosoftOffice} alt="Image" />
                                 <h5>Microsoft Office</h5>
+                            </div>
+                            <div className="item">
+                                <img src={powerbi} alt="Image" />
+                                <h5>Power BI</h5>
+                            </div>
+                            <div className="item">
+                                <img src={fastapi} alt="Image" />
+                                <h5>Fast API</h5>
                             </div>
                         </Carousel>
                     </div>
