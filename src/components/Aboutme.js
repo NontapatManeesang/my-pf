@@ -9,7 +9,7 @@ export const Aboutme = () => {
       <Container>
         <TrackVisibility>
             <div>
-              <h2>About Me</h2>
+              <h2 className="-frame">About Me</h2>
               <p>
                 Hello, my name is Nontapat Maneesaeng. I am a recent graduate
                 from the Faculty of Informatics with a strong interest and

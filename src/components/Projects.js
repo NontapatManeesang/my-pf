@@ -51,7 +51,7 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Works</h2>
+                  <h2 className="-work">Works</h2>
                   <p>Training and work experience history</p>
                   <div className="responsive-wrapper">
                     <img src={auto} alt="work Img" className="responsive-img" />

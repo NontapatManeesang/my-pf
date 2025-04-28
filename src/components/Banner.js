@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">HI I'm</span>
-                <h1 style={{ color: '#fff' , fontSize: '50px'}} >{`NONTAPAT MANEESANG`} </h1>
+                <h1 className="-nontapat" style={{ color: '#fff' , fontSize: '50px'}} >{`NONTAPAT MANEESANG`} </h1>
                 <h1 style={{ color: 'yellow' , fontSize: '40px'}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Data Science" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a full-stack developer specializing in building web applications and end-to-end software solutions. With both front-end and back-end knowledge, I am passionate about developing efficient code and creating great user experiences.</p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}

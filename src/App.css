@@ -82,6 +82,79 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+.portfolio-heading {
+  font-size: 30px;
+  font-weight: 700;
+  background: url('./assets/img/wallblue.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text; /* สำหรับ Chrome, Safari */
+  color: transparent;
+  animation: animate_portfolio 10s linear infinite;
+}
+
+@keyframes animate_portfolio {
+  to {
+    background-position-x: -54svh;
+  }
+}
+
+.-frame{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -150svh;
+  }
+}
+
+.-skill{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_skill 10s linear infinite;
+}
+
+@keyframes animate_skill {
+  to {
+    background-position-x: -200svh;
+  }
+}
+
+.-tools{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_tool 10s linear infinite;
+}
+
+@keyframes animate_tool {
+  to {
+    background-position-x: -200svh;
+  }
+}
+
+.-work{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_work 10s linear infinite;
+}
+
+@keyframes animate_work {
+  to {
+    background-position-x: -200svh;
+  }
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -121,7 +194,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgb(85, 84, 84);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;

@@ -42,8 +42,8 @@ export const Skills_1 = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill_1-bx wow zoomIn">
-                        <h2>Tools</h2>
-                        <p>Tools that can be used for work</p>
+                        <h2 className='-tools'>Tools</h2>
+                        <p >Tools that can be used for work</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill_1-slider">
                           <div className="item">
                                 <img src={vscode} alt="Image" />
