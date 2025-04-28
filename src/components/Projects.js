@@ -58,7 +58,7 @@ export const Projects = () => {
 
                     <div className="detail_autocorp">
                       <a className="company-name">
-                        Company : autocorp holding public company limited
+                        Company : Autocorp Holding Public Company Limited
                       </a>
                       <br />
                       <a className="company-position">
@@ -101,7 +101,7 @@ export const Projects = () => {
                       <a className="company-name">Company : Cherdsak Clinic</a>
                       <br />
                       <a className="company-position">
-                        Position : medical assistant
+                        Position : Medical assistant
                       </a>
                       <br />
                       <a className="company-assigned">Assigned duties :</a>

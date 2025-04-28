@@ -19,8 +19,8 @@ export const Footer = () => {
               PORTFOLIO
             </span>
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end ">
-            <h3 style={{ justifyContent: "center" , alignItems:"center" ,display:'flex' , marginBottom:"20px" }}> Contact</h3>
+          <Col size={12} sm={6} className="text-center  ">
+            <h3 style={{ marginBottom:"20px" }}> Contact</h3>
             <ul style={{ display:"flex" , flexDirection: "column" , textDecoration: "none" , listStyleType: "none" , margin: "0" ,gap: "10px"  }}>
               <li style={{ display:"flex" , gap: "20px" }}> 
                 <PhoneIcon /> 063-009-7948

@@ -93,68 +93,6 @@ p.danger {
   animation: animate_portfolio 10s linear infinite;
 }
 
-@keyframes animate_portfolio {
-  to {
-    background-position-x: -54svh;
-  }
-}
-
-.-frame{
-  background: url('./assets/img/rainbow.jpg');
-  background-size: cover;
-  background-clip: text;
-  color: transparent;
-  animation: animate 10s linear infinite;
-}
-
-@keyframes animate {
-  to {
-    background-position-x: -150svh;
-  }
-}
-
-.-skill{
-  background: url('./assets/img/rainbow.jpg');
-  background-size: cover;
-  background-clip: text;
-  color: transparent;
-  animation: animate_skill 10s linear infinite;
-}
-
-@keyframes animate_skill {
-  to {
-    background-position-x: -200svh;
-  }
-}
-
-.-tools{
-  background: url('./assets/img/rainbow.jpg');
-  background-size: cover;
-  background-clip: text;
-  color: transparent;
-  animation: animate_tool 10s linear infinite;
-}
-
-@keyframes animate_tool {
-  to {
-    background-position-x: -200svh;
-  }
-}
-
-.-work{
-  background: url('./assets/img/rainbow.jpg');
-  background-size: cover;
-  background-clip: text;
-  color: transparent;
-  animation: animate_work 10s linear infinite;
-}
-
-@keyframes animate_work {
-  to {
-    background-position-x: -200svh;
-  }
-}
-
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -304,10 +242,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  .navbar-text {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: -40px;
-  padding: 260px 0 100px 0;
+  padding: 185px 0 100px 0;
   background-color: #AA367C;
   background-image: url('./assets/img/wallpaper_banner.jpg');
   background-position: top center;
@@ -374,6 +325,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* ซ้อนกันเมื่อหน้าจอเล็ก */
+    text-align: center;
+  }
+}
+
 
 /************ Skills Css ************/
 .skill {
@@ -499,6 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: rgba(119, 183, 243, 0.2);
   box-shadow: inset 0 0 50px 30px rgba(176, 216, 255, 0.2);
+  
 
 }
 
@@ -514,6 +475,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 20px auto;
   padding: 10px;
   box-sizing: border-box;
+
 }
 
 /* รูปภาพให้ responsive */
@@ -527,8 +489,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* เนื้อหาด้านข้าง */
 .detail_autocorp {
-  max-width: 600px;
+  max-width: 700px;
   flex: 1;
+
 }
 
 /* ข้อความ */
@@ -550,7 +513,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .responsive-wrapper {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .detail_autocorp {
@@ -709,6 +672,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 92%;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column; /* ซ้อนกันเมื่อหน้าจอเล็ก */
+    text-align: center;
+  }
+}
+
+
 
 /************ Footer Css ************/
 .footer {
@@ -730,6 +701,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2em;
+  
 }
 .new-email-bx {
   background: #fff;
@@ -787,4 +759,75 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* ซ้อนกันเมื่อหน้าจอเล็ก */
+    text-align: center;
+  }
+}
+
+
+/* ---------------- */
+@keyframes animate_portfolio {
+  to {
+    background-position-x: -54svh;
+  }
+}
+
+.-frame{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -150svh;
+  }
+}
+
+.-skill{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_skill 10s linear infinite;
+}
+
+@keyframes animate_skill {
+  to {
+    background-position-x: -200svh;
+  }
+}
+
+.-tools{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_tool 10s linear infinite;
+}
+
+@keyframes animate_tool {
+  to {
+    background-position-x: -200svh;
+  }
+}
+
+.-work{
+  background: url('./assets/img/rainbow.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate_work 10s linear infinite;
+}
+
+@keyframes animate_work {
+  to {
+    background-position-x: -200svh;
+  }
 }
