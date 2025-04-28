@@ -39,6 +39,8 @@ export const Projects = () => {
   //   }
   // ];
 
+  // isVisible ? "animate__animated animate__zoomIn" : ""
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -48,7 +50,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
                   <h2 className="-work">Works</h2>
